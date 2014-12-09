@@ -8,7 +8,7 @@ unless File.exists?("/usr/local/lib/libglog.so")
   remote_file "/tmp/glog-#{version}.tar.gz" do
     source "#{source}glog-#{version}.tar.gz"
     mode "0644"
-    checksum "#{checksum}"
+    #checksum "#{checksum}"
   end
 
   execute "ungzip-glog" do
